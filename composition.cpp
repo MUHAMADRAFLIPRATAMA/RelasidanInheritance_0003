@@ -44,3 +44,20 @@ cout << "Hasil = " << siswa1. jumlah(10, 90) << endl;
 
 return 0;
 }
+class pelajar : public orang {
+public:
+string sekolah;
+
+pelajar(string pNama, string pSekolah) : orang(pNama), sekolah(pSekolah){
+cout << "pelajar dibuat\n" << endl;
+}
+~pelajar() {
+cout << "pelajar dihapus\n" << endl;
+}
+string perkenalan() {
+return "Hallo, nama saya " + nama + " dari sekolah " + sekolah + "\n\n";
+}
+};
+
+
+
